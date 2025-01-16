@@ -5,7 +5,7 @@ title: Advanced Server Rendering
 
 Welcome to the Advanced Server Rendering guide, where you will learn all about using React Query with streaming, Server Components and the Next.js app router.
 
-You might want to read the [Server Rendering & Hydration guide](../ssr) before this one as it teaches the basics for using React Query with SSR, and [Performance & Request Waterfalls](../request-waterfalls) as well as [Prefetching & Router Integration](../prefetching) also contains valuable background.
+You might want to read the [Server Rendering & Hydration guide](./ssr) before this one as it teaches the basics for using React Query with SSR, and [Performance & Request Waterfalls](./request-waterfalls) as well as [Prefetching & Router Integration](./prefetching) also contains valuable background.
 
 Before we start, let's note that while the `initialData` approach outlined in the SSR guide also works with Server Components, we'll focus this guide on the hydration APIs.
 
@@ -13,7 +13,7 @@ Before we start, let's note that while the `initialData` approach outlined in th
 
 We won't cover Server Components in depth here, but the short version is that they are components that are guaranteed to _only_ run on the server, both for the initial page view and **also on page transitions**. This is similar to how Next.js `getServerSideProps`/`getStaticProps` and Remix `loader` works, as these also always run on the server but while those can only return data, Server Components can do a lot more. The data part is central to React Query however, so let's focus on that.
 
-How do we take what we learned in the Server Rendering guide about [passing data prefetched in framework loaders to the app](../ssr#using-the-hydration-apis) and apply that to Server Components and the Next.js app router? The best way to start thinking about this is to consider Server Components as "just" another framework loader.
+How do we take what we learned in the Server Rendering guide about [passing data prefetched in framework loaders to the app](./ssr#using-the-hydration-apis) and apply that to Server Components and the Next.js app router? The best way to start thinking about this is to consider Server Components as "just" another framework loader.
 
 ### A quick note on terminology
 
